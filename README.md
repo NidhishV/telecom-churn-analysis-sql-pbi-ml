@@ -88,21 +88,21 @@ The raw dataset **`Customer_Data.csv`** contains **6,418 rows** and **32 feature
 
 ## Dashboards  
 ### 1. Churn Summary Dashboard  
+[![Summary-Dashboard.png](https://i.postimg.cc/Gt9sP90t/Summary-Dashboard.png)](https://postimg.cc/gLFJmz2b)
 - Overall churn rate and KPIs  
 - Breakdown by contract type, service, payment method, geography  
 - Demographic insights (age, tenure)  
 
 ### 2. Prediction Dashboard  
+[![Prediction-Dashboard.png](https://i.postimg.cc/R0R3jw4q/Prediction-Dashboard.png)](https://postimg.cc/5HXNzYHM)
 - ML model predicted customers likely to churn  
 - Churn probability segmentation (High / Medium / Low risk)  
-- Revenue at risk due to churn  
-
-*(Screenshots are available in `dashboards/` folder)*  
+- Revenue at risk due to churn   
 
 ---
 
 ## Machine Learning Model  
-- **Algorithm:** Logistic Regression / Random Forest  
+- **Algorithm:** Random Forest  
 - **Data Split:** 80/20 train-test  
 - **Performance:** ROC-AUC ≥ 0.75  
 - **Output:** Probability of churn + classification buckets (High, Medium, Low risk)  
