@@ -6,15 +6,7 @@ img
 This project focuses on analyzing and predicting **customer churn** for **Vijio Telecom**, a simulated telecom company.  
 The goal is to combine ** exploratory analysis, machine learning, and business intelligence** into one end-to-end solution.  
 
-Key steps include:  
-- **Data Extraction & ETL:** Clean and transform telecom customer data in MySQL.  
-- **Exploratory Analysis:** Identify churn trends by contracts, services, payments, and demographics.  
-- **Machine Learning:** Build and evaluate predictive models in Python (Jupyter Notebook) to forecast churn probability.  
-- **Visualization:** Develop interactive Power BI dashboards for historical churn insights and ML predictions.  
-- **Business Insights:** Translate findings into recommendations to reduce churn and protect revenue.  
-
-This project demonstrates the integration of **Data Analysis + Machine Learning + Business Analytics** to solve a real-world business challenge.
-
+---
 ## Technical Requirements  
 
 ### 1. Software & Tools  
@@ -29,6 +21,18 @@ This project demonstrates the integration of **Data Analysis + Machine Learning 
 - `matplotlib` / `seaborn` → visualizations & EDA  
 - `mysql-connector-python` → MySQL database connection  
 
+---
+## Project Architecture  
+1. **Data Source** → Telecom customer dataset (MySQL).  
+2. **ETL** → Performed in MySQL Workbench (cleaning, transformation, staging).  
+3. **Data Connection** → Python used to establish MySQL → Power BI pipeline.  
+4. **Visualization** → Power BI dashboards:  
+   - **Churn Summary Dashboard** (KPIs, trends, drivers).  
+   - **Prediction Dashboard** (ML outputs, at-risk customers, revenue impact).  
+5. **Machine Learning** → Logistic Regression / Random Forest model in Jupyter Notebook to predict churn.  
+6. **Integration** → ML predictions exported and visualized in Power BI.  
+
+---
 ### 3. Dataset  
 ## 📑 Dataset Description  
 
@@ -77,4 +81,68 @@ The raw dataset **`Customer_Data.csv`** contains **6,418 rows** and **32 feature
 - **`stg_churn.csv`** → Raw import & initial cleaning (staging layer)  
 - **`prod_churn.csv`** → Production-ready cleaned dataset  
 - **`vw_churndata.csv`** → SQL view with churn metrics  
-- **`vw_joindata.csv`** → SQL view joining demographics, contracts, billing & churn status  
+- **`vw_joindata.csv`** → SQL view joining demographics, contracts, billing & churn status
+
+
+---
+
+## Dashboards  
+### 1. Churn Summary Dashboard  
+- Overall churn rate and KPIs  
+- Breakdown by contract type, service, payment method, geography  
+- Demographic insights (age, tenure)  
+
+### 2. Prediction Dashboard  
+- ML model predicted customers likely to churn  
+- Churn probability segmentation (High / Medium / Low risk)  
+- Revenue at risk due to churn  
+
+*(Screenshots are available in `dashboards/` folder)*  
+
+---
+
+## Machine Learning Model  
+- **Algorithm:** Logistic Regression / Random Forest  
+- **Data Split:** 80/20 train-test  
+- **Performance:** ROC-AUC ≥ 0.75  
+- **Output:** Probability of churn + classification buckets (High, Medium, Low risk)  
+
+---
+
+## Key Findings  
+- **Month-to-month contracts** have the highest churn (46.5%).  
+- **Fiber optic customers** churn at 41.1%.  
+- **Mailed check payment** method has 37.8% churn.  
+- **Certain states** (J&K, Assam, Jharkhand) show significantly higher churn.  
+- ML model predicted **379 customers at risk** (~₹43,000 monthly revenue impact).  
+
+---
+
+## Business Recommendations  
+1. Incentivize annual contracts to reduce short-term churn.  
+2. Improve retention offers for fiber optic & multi-service customers.  
+3. Promote auto-pay/digital payments.  
+4. Focus service quality in high-churn geographies.  
+5. Use ML outputs for proactive customer care interventions.  
+
+---
+
+## Documentation  
+- [Business Requirements Document (BRD)](docs/BRD.pdf)  
+- [Functional Requirements Document (FRD)](docs/FRD.pdf)  
+- [Executive Summary](docs/Executive_Summary.pdf)
+
+
+Key steps include:  
+- **Data Extraction & ETL:** Clean and transform telecom customer data in MySQL.  
+- **Exploratory Analysis:** Identify churn trends by contracts, services, payments, and demographics.  
+- **Machine Learning:** Build and evaluate predictive models in Python (Jupyter Notebook) to forecast churn probability.  
+- **Visualization:** Develop interactive Power BI dashboards for historical churn insights and ML predictions.  
+- **Business Insights:** Translate findings into recommendations to reduce churn and protect revenue.  
+
+This project demonstrates the integration of **Data Analysis + Machine Learning + Business Analytics** to solve a real-world business challenge.
+
+
+---
+
+> This project demonstrates the integration of **Data Analysis + Machine Learning + Business Analytics** to solve a challenge.
