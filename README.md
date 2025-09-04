@@ -1,6 +1,6 @@
 # Vijio Telecom – Customer Churn Analysis & Prediction
 
-img
+[![Screenshot-2025-09-04-at-11-09-54-PM.png](https://i.postimg.cc/zvQQP2FM/Screenshot-2025-09-04-at-11-09-54-PM.png)](https://postimg.cc/4HzwY5Mb)
 
 ## Overview  
 This project focuses on analyzing and predicting **customer churn** for **Vijio Telecom**, a simulated telecom company.  
