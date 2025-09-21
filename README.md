@@ -140,8 +140,6 @@ Key steps include:
 - **Visualization:** Develop interactive Power BI dashboards for historical churn insights and ML predictions.  
 - **Business Insights:** Translate findings into recommendations to reduce churn and protect revenue.  
 
-This project demonstrates the integration of **Data Analysis + Machine Learning + Business Analytics** to solve a real-world business challenge.
-
 
 ---
 
