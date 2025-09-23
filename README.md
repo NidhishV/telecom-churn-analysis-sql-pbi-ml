@@ -104,7 +104,7 @@ The raw dataset **`Customer_Data.csv`** contains **6,418 rows** and **32 feature
 ## Machine Learning Model  
 - **Algorithm:** Random Forest  
 - **Data Split:** 80/20 train-test  
-- **Performance:** ROC-AUC ≥ 0.75  
+- **Performance:** ROC-AUC = 0.89 
 - **Output:** Probability of churn + classification buckets (High, Medium, Low risk)  
 
 ---
